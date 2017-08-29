@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html data-ng-app = "principal">
+<head>
+	<meta charset="utf-8">
+	<title> {{titulo}} </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+</head>
+<!-- Iniciando aplicaçao com o ng-ap -->
+<body>
+	
+	<!-- Criando um Model - responsavel por atualizacoes da View -->
+	<label for="nome">Nome: </label>
+	<input type="text" placeholder="Digite seu nome" name="nome" data-ng-model="nome">
+	<hr>
+
+	<!-- Criando um outro Model - responsavel por atualizacoes da View -->
+	<label for="nome">Titulo: </label>
+	<input type="text" placeholder="Digite o titulo que deseja" name="nome" data-ng-model="titulo">
+	<hr>
+
+	<!-- View que sera atualizada de acordo com o Model -->
+	<h1>Ola, {{nome}}!</h1>
+
+<script>
+	angular.module("principal", []) /*Inicia o angular com o modulo especificado 'principal' e o array de dependencias vazio*/
+</script>
+</body>
+</html>

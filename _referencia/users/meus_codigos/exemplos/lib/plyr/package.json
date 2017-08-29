@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      "plyr",
+      "/var/www/html/cursos/curso_desenvolvimento_web/primeiro_projeto_site"
+    ]
+  ],
+  "_from": "plyr@latest",
+  "_id": "plyr@2.0.13",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/plyr",
+  "_nodeVersion": "7.2.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/plyr-2.0.13.tgz_1494893379518_0.824224938871339"
+  },
+  "_npmUser": {
+    "email": "sam@selz.com",
+    "name": "sampotts"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "plyr",
+    "raw": "plyr",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/plyr/-/plyr-2.0.13.tgz",
+  "_shasum": "9b726d2444fd743338c23d3c48ca3416c97712be",
+  "_shrinkwrap": null,
+  "_spec": "plyr",
+  "_where": "/var/www/html/cursos/curso_desenvolvimento_web/primeiro_projeto_site",
+  "author": {
+    "email": "sam@potts.es",
+    "name": "Sam Potts"
+  },
+  "bugs": {
+    "url": "https://github.com/sampotts/plyr/issues"
+  },
+  "dependencies": {},
+  "description": "A simple, accessible and customizable HTML5, YouTube and Vimeo media player",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "^2.3.3",
+    "gulp-less": "^3.0.5",
+    "gulp-open": "^2.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.5.3",
+    "gulp-s3": "^0.3.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-size": "^2.1.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^5.0.5",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.1.5",
+    "through2": "^2.0.1"
+  },
+  "directories": {
+    "doc": "readme.md"
+  },
+  "dist": {
+    "shasum": "9b726d2444fd743338c23d3c48ca3416c97712be",
+    "tarball": "https://registry.npmjs.org/plyr/-/plyr-2.0.13.tgz"
+  },
+  "gitHead": "bcf88cd0241f01f37c3d62da21a8715f883fa8b5",
+  "homepage": "http://plyr.io",
+  "keywords": [
+    "DASH",
+    "HLS",
+    "HTML5 Audio",
+    "HTML5 Video",
+    "Media Player",
+    "Shaka",
+    "WordPress"
+  ],
+  "license": "MIT",
+  "main": "src/js/plyr.js",
+  "maintainers": [
+    {
+      "name": "sampotts",
+      "email": "sam@selz.com"
+    }
+  ],
+  "name": "plyr",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sampotts/plyr.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.13"
+}

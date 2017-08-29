@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html data-ng-app = "principal">
+<head>
+	<meta charset="utf-8">
+	<title>AngujarJS - Exemplos</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+</head>
+<style type="text/css">
+	input {
+		padding: 8px;
+		border: solid #ccc 1px;
+	}
+</style>
+<!-- Iniciando aplicaçao com o ng-ap -->
+<body data-ng-controller="controleUsuarios as Usuarios">
+		<!-- View que sera atualizada de acordo com o Model -->
+	<ul>
+	
+		<h2>{{Usuarios.titulo}}</h2>
+	
+		<li data-ng-repeat="usuario in Usuarios.usuarios | orderBy:'nome'">
+			{{usuario.nome | uppercase}} - {{usuario.email}}
+		</li>
+	
+	</ul>
+
+	<div data-ng-controller="controleCursos as Cursos">
+		
+		<ul>
+			<h2>{{Cursos.titulo}}</h2>
+			
+			<li  data-ng-repeat="curso in Cursos.cursos">
+				{{curso.nome | uppercase}} - {{curso.professor}}
+			</li>
+		
+		</ul>
+
+	</div>
+
+<script>
+	angular.module("principal", [])
+		.controller('controleUsuarios', ControleUsuarios)
+		.controller('controleCursos', ControleCursos);
+
+	function ControleUsuarios () {
+		var vm = this;
+		vm.titulo = "Usuarios";
+		vm.usuarios = [
+			{nome:'Marcelo', email: 'marcelo@gmail.com'},
+			{nome:'Leandro', email: 'leandro@gmail.com'},
+			{nome:'Carmen', email: 'carmen@gmail.com'},
+			{nome:'Heitor', email: 'heitor@gmail.com'}
+		];
+	}
+
+	// controleUsuarios['$inject'] = ['$this']; /*.inject = ['$this']*/
+	
+	function ControleCursos () {
+		var vm = this;
+		vm.titulo = "Cursos";
+		vm.cursos = [
+			{nome:'Laravel', professor: 'Sandro Sobral'},
+			{nome:'Estrutura de Dados', professor: 'Antonio Claudio'},
+			{nome:'Arduino Intermediario', professor: 'Kaylani Canela'},
+		];
+	}
+
+	// controleCursos['$inject'] = ['$scope']; /*.inject = ['$scope']*/
+
+</script>
+</body>
+</html>

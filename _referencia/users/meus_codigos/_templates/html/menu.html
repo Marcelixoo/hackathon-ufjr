@@ -1,0 +1,66 @@
+		<?php
+		
+		 include_once("header.php"); 
+	 	
+	 	?>
+		<!-- Barra de pesquisa do usuario -->
+		<div class="pesquisa" >
+			<form  id="formulario" action="" method="post" onsubmit="AtualizarFormulario()">
+				<input id="pesquisa" type="text" name="pesquisa" placeholder="Digite sua pesquisa aqui" onkeyup="Resposta(this.value)">
+				<button id="botao" type="submit">Pesquisar</button>
+			</form>	
+		</div>
+		<!-- Final da barra de pesquisa -->
+
+		<!-- Menu de navegacao pelas opcoes -->
+		<div class="opcoes">	
+			<nav class="menu">
+				<ul id="lista">
+					<li><a href="#">{$titulo1}</a>
+						<ul>
+							{loop="$atributos"}
+							<li><a href="#">{$value}</a></li>
+							{/loop}
+						</ul>
+					</li>	
+					<li><a href="#">{$titulo2}</a>
+						<ul>
+							{loop="$atributos"}
+							<li><a href="#">{$value}</a></li>
+							{/loop}
+						</ul>
+					</li>	
+					<li><a href="#">Recursos</a>	
+						<ul>
+							{loop="$atributos"}
+							<li><a href="#">{$value}</a></li>
+							{/loop}
+							<li><a href="#">Workshops</a></li>
+							<li><a href="#">Video-Aulas</a></li>
+							<li><a href="#">Consultoria</a></li>
+							<li><a href="#">Desenvolvimento de sistemas</a></li>	
+						</ul>
+					</li>	
+					<li><a href="#">Contato</a>
+						<ul>
+							{loop="$atributos"}
+							<li><a href="#">{$value}</a></li>
+							{/loop}
+						</ul>	
+					</li>
+				</ul>
+			</nav>
+		</div>	
+		<!-- Final do menu de navegacao -->
+		<?php
+		 
+		 include_once("resultados.php"); 
+		 
+		 ?>
+		
+		<?php
+		
+		 include_once("footer.php"); 
+	 	
+	 	?>
+		

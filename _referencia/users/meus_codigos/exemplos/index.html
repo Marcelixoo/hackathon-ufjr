@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html data-ng-app="lista-telefonica">
+<head>
+	<meta charset="utf-8">
+	<title>Curso AngularJS</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/angular.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+	<script src="lib/node_modules/angular-locale-pt-br/angular-locale_pt-br.js"></script>
+	<script type="text/javascript">
+
+	angular.module("lista-telefonica", []);
+	angular.module("lista-telefonica").controller("lista-telefonica-controller", function ($scope) {
+
+		$scope.nomeApp = "Lista telefonica";
+
+		$scope.contatos = [
+			{nome: "Marcelo", telefone: "981102391", data: new Date()},
+			{nome: "Alessandro", telefone: "981106667", data: new Date()},
+			{nome: "Carmen", telefone: "982345699", data: new Date()},
+			{nome: "Paulinha", telefone: "982355647", data: new Date()}
+		];
+
+		$scope.operadoras = [
+			{nome: "Vivo", codigo: 15},
+			{nome: "Tim", codigo: 41},
+			{nome: "Claro", codigo: 21},
+			{nome: "Oi", codigo: 14}
+		];
+
+		$scope.AdicionarContato = function (contato) {
+			$scope.contatos.push(angular.copy(contato));
+			delete $scope.contato;
+		}
+
+		$scope.RemoverContato = function (contatos) {
+			$scope.contatos = contatos.filter(function (contato) {
+				if (!contato.selecionado) return contato;
+			});
+		}
+
+		$scope.isContatoSelecionado = function (contatos) {
+		 	return contatos.some(function (contato) {
+				return contato.selecionado; /*Retorna verdadeiro se algum contato estiver selecionado*/
+			});
+		}
+	});
+		
+	</script>
+</head>
+<body  data-ng-controller="lista-telefonica-controller">
+		
+	<div class="jumbotron">
+		
+		<h3>{{nomeApp}}</h3>
+
+		<div class="container">
+			<div class="divisoes">
+				<input class = "form-control" type="text" data-ng-model="busca" placeholder="O que esta procurando?" autofocus>
+			</div>
+		</div>
+
+		<div class="container">
+			
+			<table class = "table table-striped" ng-show = "contatos.length > 0">
+			
+				<thead>
+					<tr>
+						<th></th>
+						<th>Nome</th>
+						<th>Telefone</th>
+						<th>Operadora</th>
+						<th>Data</th>
+					</tr>
+				</thead>
+	
+				<tbody>
+					
+					<tr ng-class = "{selecionado: contato.selecionado}" ng-repeat = "contato in contatos | filter: busca">
+						<td><input type="checkbox" ng-model = "contato.selecionado"></td>
+						<td>{{contato.nome}}</td>
+						<td>{{contato.telefone}}</td>
+						<td>{{contato.operadora.nome}}</td>
+						<td>{{contato.data | date: ' dd MMM yyyy'}}</td>
+					</tr>
+				
+				</tbody>
+			
+			</table>
+		</div>
+
+		<div class="container">
+
+			<div class="inputs">
+				<div class="divisoes">
+					<input class = "form-control" type="text" data-ng-model="contato.nome" placeholder="Nome">
+				</div>
+
+				<div class="divisoes">	
+					<input class = "form-control" type="text" data-ng-model="contato.telefone" placeholder="Telefone">
+				</div>
+
+				<div class="divisoes">	
+					<select class = "form-control" data-ng-model = "contato.operadora" ng-options = "operadora.nome for operadora in operadoras">
+						<option value="">Selecione uma opç&atilde;o</option>
+					</select>
+				</div>
+			</div>
+
+			<button class="btn btn-primary btn-block" data-ng-click = "AdicionarContato(contato)" ng-disabled = "!contato.nome || !contato.telefone">Adicionar contato</button>
+			<button class="btn btn-danger btn-block" data-ng-click = "RemoverContato(contatos)" ng-show = "isContatoSelecionado(contatos)">Remover contato</button>
+
+		</div>
+
+	</div>
+
+	<div class = "footer" ng-include = "'footer.html'"></div> <!-- Inclui um arquivo externo  -->
+
+</body>
+</html>

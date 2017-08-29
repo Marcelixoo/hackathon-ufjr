@@ -1,0 +1,46 @@
+		<!-- Barra de pesquisa do usuario -->
+		<div class="pesquisa">
+			<form  id="formulario" action="gerando-paginas-dinamicas.php" method="POST">
+				<input id="pesquisa" type="text" name="pesquisa" placeholder="Digite sua pesquisa aqui" onkeyup="showOptions(this.value)">
+				<button id="botao">Pesquisar</button>
+			</form>	
+		</div>
+		<!-- Final da barra de pesquisa -->
+
+		<!-- Menu de navegacao pelas opcoes -->
+		<div class="opcoes">	
+			<nav class="menu">
+				<ul id="lista">
+					<li><a href="#">{$titulo1}</a>
+						<ul ng-repeat = "atributos in atributosMenu">
+							<li><a href="#">{{$atributos}}</a></li>
+						</ul>
+					</li>	
+					<li><a href="#">{$titulo2}</a>
+						<ul ng-repeat = "atributos in atributosMenu">
+							<li><a href="#">{{$atributos}}</a></li>
+						</ul>
+					</li>	
+					<li><a href="#">Recursos</a>
+						<ul>
+							{loop="$atributos"}
+							<li><a href="#">{$value}</a></li>
+							{/loop}
+							<li><a href="#">Workshops</a></li>
+							<li><a href="#">Video-Aulas</a></li>
+							<li><a href="#">Consultoria</a></li>
+							<li><a href="#">Desenvolvimento de sistemas</a></li>	
+						</ul>
+					</li>	
+					<li><a href="#">Contato</a>
+						<ul>
+							{loop="$atributos"}
+							<li><a href="#">{$value}</a></li>
+							{/loop}
+						</ul>	
+					</li>
+				</ul>
+			</nav>
+		</div>	
+		<!-- Final do menu de navegacao -->
+		

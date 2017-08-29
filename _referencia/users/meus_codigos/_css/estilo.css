@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/*estilo da estrutura do documento*/
+div#interface
+{
+
+	box-shadow: 2px 2px 3px #000000;
+	margin: auto;
+	width: 1200px;
+}
+
+/*cabeçalho do site*/
+header#cabecalho
+{
+	background-color: #005d96;
+	border: 2px solid #000000;
+	padding: 5px;
+}
+header#cabecalho hgroup
+{
+	position: absolute;
+	left: 650px;
+	top: 50px;
+}
+header#cabecalho hgroup .tituloPrincipal
+{
+	color: #FFFFFF;
+	font-size: 22pt;
+	font-family: Arial, sans-serif;
+	text-shadow: 1px 1px 1px #000000;
+	margin: 0px;
+	text-align: center;
+}
+header#cabecalho img#logoHucff
+{
+	margin-left: 5px;
+	margin: 5px;
+}
+header#cabecalho img#logoMinerva
+{
+	width: 110px;
+	height: 130px;
+	margin: 10px;
+}
+
+/* corpo do site*/
+section#corpo 
+{
+	background-color: #FFFFFF;
+	padding: 5px;
+}
+section#corpo form#numPaciente
+{
+	width: 750px;
+	margin: auto;
+}
+form#numPaciente label
+{
+	font-weight: bold;
+}
+div.menu
+{
+	display: block;
+	border: 2px solid #000000;
+	background-color: #005d96;
+	color: #FFFFFF;
+	margin: 5px auto 5px auto;
+	padding: auto;
+	width:200px;
+	text-align:center;
+}
+a {
+	width:200px;
+}
+
+/*rodape do site*/
+footer#rodape
+{
+	background-color: #005d96;
+	border: 2px solid #000000;
+	padding: 5px;
+}
+footer#rodape p#textoRodape
+{
+	text-align:center;
+	color:#FFFFFF;
+	margin-top:30px;
+	font-weight:bold;
+	text-shadow:1px 1px #000000;
+}
+/* nova interface */
+input#iBuscar {
+	margin:10px auto 7px 300px;
+}
+ul#iMenu 
+{
+	margin:auto auto auto 258px;
+	list-style:none;
+}
+ul#iMenu li{
+	display:inline-block;
+	width:315px;
+	border: 1px solid #000000;
+	padding:2px;
+	margin:2px 5px 0px 2px;
+	color:#FFFFFF;
+	background-color:#005d96;
+	text-shadow: 1px 1px 1px #000000;
+	transition: background-color 1s;
+}
+ul#iMenu li:hover
+{
+	background-color:#005;
+}
+div.divDrop
+{
+	display:none;
+	border: 2px solid #000000;
+	width:650px;
+	margin:0px auto auto 300px;
+	background-color:#005d96;
+}
