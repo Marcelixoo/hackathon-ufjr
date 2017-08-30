@@ -1,0 +1,27 @@
+{
+  "name": "bknd-hckufrj",
+  "version": "1.0.0",
+  "description": "hackathon-ufrj backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/Marcelixoo/hackathon_ufjr\""
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "gusjasponde",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
