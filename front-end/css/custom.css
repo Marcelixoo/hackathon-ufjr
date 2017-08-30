@@ -1,0 +1,406 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+	height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+inupt {
+  outline: none;
+}
+
+div.jumbotron p  {
+  padding: 80px;
+  text-align: center;
+}
+
+div.jumbotron p.text-muted {
+  padding: 44px;
+}
+
+div.jumbotron p a.btn {
+  width: 40%;
+}
+
+div#page-wrapper {
+  margin: 100px auto;
+  display: block;
+  position: relative;
+}
+
+div#page-wrapper h1 {
+  margin-bottom: 30px;
+}
+
+div#page-wrapper a.btn.btn-success {
+  width: 20%;
+}
+
+a.btn.btn-primary {
+  margin-top: 0;
+  width: 70%;
+}
+
+h2.form-signin-heading {
+  margin-bottom: 40px;
+}
+
+form.form-signin {
+  margin: 100px auto 30px auto;
+  width: 50%;
+}
+
+button.submit.btn.btn-primary {
+  width: 100%;
+}
+
+div.row.loginBotoes {
+  width: 50%;
+  margin: 20px auto 120px auto;
+}
+
+button#next_button.submit.btn.btn-primary {
+  width: 55%;
+}
+
+.resetPasswordForm input.form-control {
+  width: 50%;
+}
+
+.resetPasswordForm {
+  margin: 50px auto 300px auto;
+}
+
+.resetPasswordForm input.btn.btn-primary {
+  width: 50%;
+}
+
+p img.img-thumbnail {
+  margin-bottom: 20px;
+  width: 65%;
+	border-radius: 170px;
+}
+
+p img.img-thumbnail.imagem {
+}
+
+.botoesProfile {
+  width: 100%;
+  margin: 0 auto 0 15px;
+  padding: 0;
+  text-align: left;
+}
+
+div#page-wrapper #system-search {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+div#page-wrapper div.input-group input.btn.btn-primary {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.searchUserMessage {
+  margin-left: 10px;
+}
+
+div.input-group span.input-group-btn button.btn.btn-default {
+    position: relative;
+    top: -6px;
+}
+
+.user-settings-form {
+  width: 70%;
+}
+
+.user-settings-form input.btn, .user-settings-form a.btn {
+  width: 100%;
+}
+
+.user-settings-form input.btn {
+  margin-top: 40px;
+}
+
+a.btn.btn-primary.verify {
+	margin-top: 50px;
+	width: 50%;
+}
+
+/**************************** FOOOTER ****************************/
+
+
+.footer {
+	z-index: 3;
+  background-color: white; /*Pode mudar a cor aqui depois <-----------*/
+	position: relative;
+	display: block;
+  padding: 30px;
+	width: 100%;
+	height: 150px;
+	bottom: 0;
+	margin: 0 auto;
+}
+
+#contacts img {
+	padding-top: 10px;
+  height: 55px;
+  width: 50px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#contacts a {
+    text-decoration: none;
+}
+
+#contacts img:hover {
+    opacity: 0.8;
+}
+
+#contacts {
+    text-align: center;
+}
+
+
+img {
+	border-radius: 50px;
+	transition: all 0.2s ease-out;
+}
+
+img:hover {
+	cursor: pointer;
+	transform: translateY(-10px);
+	box-shadow: 4px 20px 16px 0px rgba(50, 50, 50, 0.45);
+}
+
+.copyright {
+    font-size: 10pt;
+    text-align: center;
+    padding-top: 8px;
+    color: grey;
+}
+
+/**********************************************************************************/
+/*************************** PESQUISA --> MODIFICAÇÕES ****************************/
+/**********************************************************************************/
+
+div.rodape {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	align-content: center;
+	height: 100px;
+	width: 100%;
+	margin-bottom: -100px;
+}
+
+div.container.pesquisa {
+	margin-top: 100px;
+}
+
+div.jumbotron.container {
+	position: relative;
+	margin: 100px auto;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	padding: 0;
+
+}
+
+
+.pesquisa {
+	width: 50%;
+	top: 70px;
+	margin: auto;
+	position: relative;
+	display: block;
+}
+
+input#pesquisa {
+	position: absolute;
+	margin: 0 auto;
+	top: -135px;
+	width: 75%;
+	border-radius: 5px;
+	outline: none;
+}
+
+ button#botao {
+ 	position: absolute;
+	margin: 0 auto;
+	top: -135px;
+	right: -15px;
+ }
+
+input#pesquisa:focus {
+	font-size: 15px;
+}
+
+#botao {
+	width: 23.4%;
+	margin-left: 5px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	background-color: #069;
+	border-radius: 5px;
+	border: solid 2px rgba(0,102,153,0.2);
+}
+
+#botao:hover {
+	background-color: #0885C7;
+	cursor: pointer;
+}
+
+div.container.opcoes {
+	position: relative;
+	top:80px;
+	display: flex;
+	margin: auto;
+	width: 50%;
+	height: 60px;
+	background-color: #bdc3c7;
+	font-family: 'Arial' sans-serif;
+	border-radius: 0;
+}
+
+.menu {
+	border-radius: none;
+	margin: auto;
+	z-index: 6;
+}
+
+.menu ul {
+	/*Tira os marcadores de lista*/
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+.menu ul li {
+	width: 200px;
+	float: left;
+	color: black;
+}
+
+div.container.opcoes a {
+	padding: 18px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #bdc3c7;
+	color: black;
+	border: .5px solid #bdc3c7;
+}
+
+/*Comportamento inicial para os submenus -> escondidos*/
+.menu ul ul {
+	margin-top: 2px;
+	position: absolute;
+	visibility: hidden;
+	display: block;
+	background-color: #bdc3c7;
+}
+
+.menu ul li:hover ul {
+	visibility: visible;
+	position: relative;
+}
+
+.menu ul li a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+div.container.opcoes a:hover {
+	background-color: #f4f4f4;
+	border: .5px solid black;
+}
+
+.menu ul li ul {
+	color:black;
+}
+
+.menu ul ul li {
+	float: none;
+	border-bottom: solid 1px black;
+}
+
+.menu ul ul li a {
+	background-color: #6E6E72;
+}
+
+.resultados {
+	z-index: 4;
+	margin: auto;
+	position: relative;
+	top:140px;
+	width: 60%;
+	padding: 10px;
+	padding-bottom: 120px;
+	overflow: auto;
+	text-align: center;
+}
+
+div.row.escolhasPesquisa {
+	position: relative;
+	top: -20px;
+	border: none;
+}
+
+div.container.opcoes {
+	position: relative;
+	top: -20px;
+}
+
+/**********************************************************************************/
+/***************************** EXIBIÇÃO --> RESULTADOS ****************************/
+/**********************************************************************************/
+div#exibicaoResultados {
+	width: 75%;
+	height: 200px;
+	border: 1px solid black;
+}
+
+.atualizarFeed {
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+
+.post {
+	margin: 20px auto;
+}
+
+img.img-thumbnail.posts {
+	border-radius: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+center h3 {
+	padding-bottom: 20px;
+}
+
+a.post {
+	text-decoration: none;
+	color: black;
+}
+
+div.post {
+	border: 1px #ccc solid;
+}
+
+div.post:hover {
+	background-color: #ccc;
+	cursor: pointer;
+}
