@@ -43,7 +43,6 @@ CREATE TABLE IF NOT EXISTS `hackufrj`.`Person` (
   `phone` VARCHAR(15) NULL,
   `role` VARCHAR(15) NULL,
   `id_interests` TEXT(50) NULL,
-  `Personcol` VARCHAR(45) NULL,
   PRIMARY KEY (`idPerson`),
   INDEX `id_course_idx` (`id_course` ASC),
   CONSTRAINT `id_course`
