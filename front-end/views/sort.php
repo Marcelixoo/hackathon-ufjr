@@ -86,6 +86,10 @@ $param = [
 
 // $interesses = ["#Artes", "#Jogos", "#Tecnologia"];
 
+if (!isset($interesses)) {
+  $interesses = [];
+}
+
 $novo = [];
 
 foreach ($param as $post) {
@@ -94,6 +98,11 @@ foreach ($param as $post) {
     if ($teste) {
       $post['nota'] += 30;
     }
+
+    // if ($post['curso'] == $user['curso']) {
+    //   $post['nota'] += 60;
+    // }
+
   }
   $novo[] = $post;
 }

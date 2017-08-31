@@ -13,8 +13,9 @@
     <div class="collapse navbar-collapse navbar-top-menu-collapse navbar-right menuzinho">
       <ul class="nav navbar-nav center-text">
           <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/timeline.php"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/interesses.php"><i class="fa fa-book"></i> Interesses</a></li>
           <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/login.php" class=""><i class="fa fa-sign-in"></i> Login</a></li>
-          <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/register.php" class=""><i class="fa fa-plus-square"></i> Registrar</a></li>
+          <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/registro.php" class=""><i class="fa fa-plus-square"></i> Registrar</a></li>
           <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-life-ring"></i> Ajuda <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/recuperar_senha.php"><i class="fa fa-wrench"></i> Recuperar Senha</a></li>
