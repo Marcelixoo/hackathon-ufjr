@@ -374,7 +374,7 @@ div#exibicaoResultados {
 .atualizarFeed {
 	width: 100%;
 	margin-bottom: 20px;
-	margin-top: 100px;
+	margin-top: 120px;
 }
 
 .post {
@@ -403,4 +403,8 @@ div.post {
 div.post:hover {
 	background-color: #ccc;
 	cursor: pointer;
+}
+
+.imagem {
+	margin-left: 0;
 }

@@ -19,110 +19,32 @@
 				<div class="col-xs-9 col-md-6 col-lg-offset-3 col-md-offset-3 timelinePosts">
 						<button class = "btn btn-danger atualizarFeed">Clique aqui para atualizar o feed</button>
 						<hr>
+            <?php foreach ($novo as $pub) { ?>
+            <!-- Início do post -->
             <a class="post" href="views/_join.php">
   						<div class="row post">
-  							<center><h3>Título do post</h3></center>
+  							<center><h3><?=$pub["titulo"]?></h3></center>
   							<div class="col-xs-4 col-md-3">
-  								<p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts" alt="Generic placeholder thumbnail"></p>
+                  <div>
+                    <p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts imagem" alt="Generic placeholder thumbnail"></p>
+                  </div>
+                  <p><center><?=$pub["curso"]?></center></p>
   							</div>
   							<div class="col-xs-8 col-md-9">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto praesentium officiis non quo deleniti, accusantium esse omnis placeat dicta minima veritatis id, libero. Cumque fugit, inventore architecto veniam nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores ad optio repudiandae vel exercitationem sapiente sit incidunt rem ab itaque soluta animi doloribus qui ratione quibusdam dolor distinctio, ullam.</p>
-  								<p class="pull-right"><small>10/06/2022</small></p>
-  							</div>
+                  <div class = "descricao">
+                    <p><?=$pub["descricao"]?></p>
+                  </div>
+                  <div class="rodapezinho">
+                    <p><small class="pull-left"><b>Local:</b> <?=$pub["local"]?></small>
+    								<small class="pull-right"><?=$pub["data"]?></small></p>
+                  </div>
+                </div>
   							<hr>
   						</div>
             </a>
             <!-- Fim do post -->
             <hr>
-            <a class="post" href="views/_join.php">
-  						<div class="row post">
-  							<center><h3>Título do post</h3></center>
-  							<div class="col-xs-4 col-md-3">
-  								<p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts" alt="Generic placeholder thumbnail"></p>
-  							</div>
-  							<div class="col-xs-8 col-md-9">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto praesentium officiis non quo deleniti, accusantium esse omnis placeat dicta minima veritatis id, libero. Cumque fugit, inventore architecto veniam nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores ad optio repudiandae vel exercitationem sapiente sit incidunt rem ab itaque soluta animi doloribus qui ratione quibusdam dolor distinctio, ullam.</p>
-  								<p class="pull-right"><small>10/06/2022</small></p>
-  							</div>
-  							<hr>
-  						</div>
-            </a>
-            <!-- Fim do post -->
-            <hr>
-            <a class="post" href="views/_join.php">
-  						<div class="row post">
-  							<center><h3>Título do post</h3></center>
-  							<div class="col-xs-4 col-md-3">
-  								<p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts" alt="Generic placeholder thumbnail"></p>
-  							</div>
-  							<div class="col-xs-8 col-md-9">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto praesentium officiis non quo deleniti, accusantium esse omnis placeat dicta minima veritatis id, libero. Cumque fugit, inventore architecto veniam nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores ad optio repudiandae vel exercitationem sapiente sit incidunt rem ab itaque soluta animi doloribus qui ratione quibusdam dolor distinctio, ullam.</p>
-  								<p class="pull-right"><small>10/06/2022</small></p>
-  							</div>
-  							<hr>
-  						</div>
-            </a>
-            <!-- Fim do post -->
-            <hr>
-            <a class="post" href="views/_join.php">
-  						<div class="row post">
-  							<center><h3>Título do post</h3></center>
-  							<div class="col-xs-4 col-md-3">
-  								<p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts" alt="Generic placeholder thumbnail"></p>
-  							</div>
-  							<div class="col-xs-8 col-md-9">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto praesentium officiis non quo deleniti, accusantium esse omnis placeat dicta minima veritatis id, libero. Cumque fugit, inventore architecto veniam nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores ad optio repudiandae vel exercitationem sapiente sit incidunt rem ab itaque soluta animi doloribus qui ratione quibusdam dolor distinctio, ullam.</p>
-  								<p class="pull-right"><small>10/06/2022</small></p>
-  							</div>
-  							<hr>
-  						</div>
-            </a>
-            <!-- Fim do post -->
-            <hr>
-            <a class="post" href="views/_join.php">
-  						<div class="row post">
-  							<center><h3>Título do post</h3></center>
-  							<div class="col-xs-4 col-md-3">
-  								<p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts" alt="Generic placeholder thumbnail"></p>
-  							</div>
-  							<div class="col-xs-8 col-md-9">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto praesentium officiis non quo deleniti, accusantium esse omnis placeat dicta minima veritatis id, libero. Cumque fugit, inventore architecto veniam nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores ad optio repudiandae vel exercitationem sapiente sit incidunt rem ab itaque soluta animi doloribus qui ratione quibusdam dolor distinctio, ullam.</p>
-  								<p class="pull-right"><small>10/06/2022</small></p>
-  							</div>
-  							<hr>
-  						</div>
-            </a>
-            <!-- Fim do post -->
-            <hr>
-            <a class="post" href="views/_join.php">
-  						<div class="row post">
-  							<center><h3>Título do post</h3></center>
-  							<div class="col-xs-4 col-md-3">
-  								<p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts" alt="Generic placeholder thumbnail"></p>
-  							</div>
-  							<div class="col-xs-8 col-md-9">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto praesentium officiis non quo deleniti, accusantium esse omnis placeat dicta minima veritatis id, libero. Cumque fugit, inventore architecto veniam nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores ad optio repudiandae vel exercitationem sapiente sit incidunt rem ab itaque soluta animi doloribus qui ratione quibusdam dolor distinctio, ullam.</p>
-  								<p class="pull-right"><small>10/06/2022</small></p>
-  							</div>
-  							<hr>
-  						</div>
-            </a>
-            <!-- Fim do post -->
-            <hr>
-            <a class="post" href="views/_join.php">
-  						<div class="row post">
-  							<center><h3>Título do post</h3></center>
-  							<div class="col-xs-4 col-md-3">
-  								<p><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/hackathon.png" class="img-thumbnail posts" alt="Generic placeholder thumbnail"></p>
-  							</div>
-  							<div class="col-xs-8 col-md-9">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla iusto praesentium officiis non quo deleniti, accusantium esse omnis placeat dicta minima veritatis id, libero. Cumque fugit, inventore architecto veniam nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores ad optio repudiandae vel exercitationem sapiente sit incidunt rem ab itaque soluta animi doloribus qui ratione quibusdam dolor distinctio, ullam.</p>
-  								<p class="pull-right"><small>10/06/2022</small></p>
-  							</div>
-  							<hr>
-  						</div>
-            </a>
-            <!-- Fim do post -->
+          <?php }?>
 				</div>
 
     </div> <!-- Row -->

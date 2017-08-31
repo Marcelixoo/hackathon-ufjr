@@ -55,7 +55,7 @@
               <p><input type="password" class="form-control" id="confirmacaoSenha" name="confirmacaoSenha" placeholder="Confirmação de senha" required></p>
 
               <div class="login-help">
-        					<a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/registro.php" class = "btn btn-primary">Registrar</a>
+        					<a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/interesses.php" class = "btn btn-primary">Registrar</a>
                   <a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/login.php" class = "btn btn-danger">Voltar</a>
         		  </div>
 

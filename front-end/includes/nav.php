@@ -10,8 +10,9 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-    <div class="collapse navbar-collapse navbar-top-menu-collapse navbar-right">
-      <ul class="nav navbar-nav ">
+    <div class="collapse navbar-collapse navbar-top-menu-collapse navbar-right menuzinho">
+      <ul class="nav navbar-nav center-text">
+          <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/timeline.php"><i class="fa fa-home"></i> Home</a></li>
           <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/login.php" class=""><i class="fa fa-sign-in"></i> Login</a></li>
           <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/register.php" class=""><i class="fa fa-plus-square"></i> Registrar</a></li>
           <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-life-ring"></i> Ajuda <b class="caret"></b></a>
@@ -23,10 +24,14 @@
       </ul> <!-- End of UL for navigation link list -->
     </div> <!-- End of Div for right side navigation list -->
 
-    <!-- Ícone lado esquerdo -->
-    <ul class="nav navbar-nav ">
-      <li><a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/timeline.php"><i class="fa fa-home"></i> Home</a></li>
+    <ul class="nav navbar-nav logo">
+      <img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/logo.png" alt="Logo">
     </ul>
+
+    <!-- Ícone lado esquerdo -->
+    <!-- <ul class="nav navbar-nav ">
+      <li><a href="/hackathon_ufrj/hackathon_ufjr/front-end/views/timeline.php"><i class="fa fa-home"></i> Home</a></li>
+    </ul> -->
 </div>
 <!-- End left navigation items -->
 

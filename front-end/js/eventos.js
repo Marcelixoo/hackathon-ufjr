@@ -4,17 +4,12 @@ $(".stickers").on("click", function () {
 });
 
 $(".enviar").on("click", function () {
-  console.log ($(".click").text());
-
-});
-
-$("button").click(function(){
-  $.post("demo_test_post.asp",
+  var colecao = ($(".click").text());
+  $.post("posts.php",
   {
-      name: "Donald Duck",
-      city: "Duckburg"
+      name: colecao
   },
   function(data, status){
-      alert("Data: " + data + "\nStatus: " + status);
+      document.write(data);
   });
 });
