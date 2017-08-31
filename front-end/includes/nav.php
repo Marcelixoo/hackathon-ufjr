@@ -26,7 +26,7 @@
     </div> <!-- End of Div for right side navigation list -->
 
     <ul class="nav navbar-nav logo">
-      <img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/logo.png" alt="Logo">
+      <a href="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/views/login.php" class=""><img src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/imagens/logo.png" alt="Logo"></a>
     </ul>
 
     <!-- Ícone lado esquerdo -->
