@@ -4,76 +4,116 @@
 <!-- Menu de navegação -->
 <?php require_once ($_SERVER['DOCUMENT_ROOT'] . '/hackathon_ufrj/hackathon_ufjr/front-end/includes/nav.php') ?>
 
-<div id="page-wrapper">
+<div id="page-wrapper" ng-controller = "interessesController">
 
   <div class="container-fluid">
 
+    <center><h1>Escolha áreas do seu interesse</h1></center><hr class = "linha">
+
+    <div class="row botaoEnviar">
+      <a class = "btn btn-primary pull-right enviar" href="timeline.php">Pronto >></a>
+      <a class = "btn btn-danger pull-left enviar" href="login.php"><< Voltar</a>
+    </div>
+
     <div class="row">
 
+      <a>
       <div class="col-lg-2 col-md-2 stickers">
-        <img src="../imagens/preferencias/artes.jpg" alt="artes">
+        <h4>Artes</h4>
       </div>
+      </a>
+      <a>
       <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/atlética.jpg" alt="atlética">
+        <h4>Tecnologia</h4>
       </div>
+      </a>
+      <a>
       <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/aventura.jpg" alt="aventura">
+        <h4>Aventura</h4>
       </div>
+      </a>
+      <a>
       <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/computação.jpg" alt="computação">
+        <h4>Computação</h4>
       </div>
+      </a>
+      <a>
       <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/debates.jpg" alt="debates">
+        <h4>Debates</h4>
       </div>
+      </a>
+      <a>
       <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/divulgação científica.jpg" alt="ciência">
+        <h4>Divulgação científica</h4>
       </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Esportes</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Grupos de Estudos</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Iniciação científica</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Intercâmbio</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Jogos</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Voluntariado</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Linguagens</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Meio-ambiente</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Militância</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Monitoria</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Palestra</h4>
+      </div>
+      </a>
+      <a>
+      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
+        <h4>Saúde</h4>
+      </div>
+      </a>
 
     </div> <!-- Row -->
-    <div class="row">
 
-      <div class="col-lg-2 col-md-2 stickers">
-        <img src="../imagens/preferencias/esportes.jpg" alt="artes">
-      </div>
-      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/grupo de estudos.jpg" alt="atlética">
-      </div>
-      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/iniciação científica.jpg" alt="aventura">
-      </div>
-      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/intercâmbio.jpg" alt="computação">
-      </div>
-      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/jogos eletrônicos.jpg" alt="debates">
-      </div>
-      <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-        <img src="../imagens/preferencias/jogos.jpg" alt="ciência">
-      </div>
-
-    </div> <!-- Row -->
-  <div class="row">
-
-    <div class="col-lg-2 col-md-2 stickers">
-      <img src="../imagens/preferencias/linguagens.jpg" alt="artes">
+    <div class="row botaoEnviar">
+      <a class = "btn btn-primary pull-right enviar" href="timeline.php">Pronto >></a>
+      <a class = "btn btn-danger pull-left enviar" href="login.php"><< Voltar</a>
     </div>
-    <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-      <img src="../imagens/preferencias/meio ambiente.jpg" alt="atlética">
-    </div>
-    <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-      <img src="../imagens/preferencias/militância.jpg" alt="aventura">
-    </div>
-    <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-      <img src="../imagens/preferencias/monitoria.jpg" alt="computação">
-    </div>
-    <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-      <img src="../imagens/preferencias/palestra.jpg" alt="debates">
-    </div>
-    <div class="col-lg-2 col-md-2 col-lg-offset-2 col-md-offset-2 stickers">
-      <img src="../imagens/preferencias/saude.jpg" alt="ciência">
-    </div>
-
-  </div> <!-- Row -->
 
 	</div> <!-- /container -->
 

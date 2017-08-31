@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="projeto">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Home</title>
+
+	<!-- Módulos do AngularJS -->
+	<script src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/lib/angular/angular.min.js"></script>
+	<script src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/js/angularApp.js"></script>
+	<script src="<?=$_SERVER['ROOT']?>/hackathon_ufrj/hackathon_ufjr/front-end/js/controllers/interessesController.js"></script>
 
 	<!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">

@@ -212,31 +212,47 @@ img:hover {
 /**************************** INTERESSES ****************************/
 
 .stickers {
-  border: 1px solid black;
+  box-shadow: 4px 20px 16px 0px rgba(50, 50, 50, 0.25);
+  border: .5px solid #1abc9c;
   display: inline-grid;
-  height: 180px;
-  width: 16%;
-  margin: 5px 5px;
+  height: 220px;
+  width: 14%;
+  margin: 30px 20px;
+  border-radius: 200px;
+  text-align: center;
+  background-color: #16a085;
 }
 
-.stickers a {
-  z-index: 12
-  position: absolute;
-  bottom: 0;
-  margin: 10px 10px;
+.stickers:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
+  box-shadow: 4px 20px 16px 0px rgba(50, 50, 50, 0.6);
 }
 
-.stickers a.btn.btn-default {
-  padding: 0;
-  height: 40px;
+.stickers.click {
+ background-color: #f39c12;
+ border: .5px solid #f39c12;
 }
 
-div#page-wrapper .stickers img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.stickers h4 {
+  position: relative;
+  top: 85px;
+  color: white;
+  font-size: 20px;
+}
+
+.botaoEnviar {
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.enviar {
+  margin: 40px auto;
+  width: 10%;
+}
+
+hr .linha {
+  width: 20%;
+  font-size: 60px;
+  color: yellow;
 }

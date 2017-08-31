@@ -1,5 +1,9 @@
 <?php
 // Variável 'rota' para redirecionamento das páginas
-$rota = $_GET['rota'];
+if ($rota) {
+  $rota = $_GET['rota'];
+} else {
+  $rota = "login";
+}
 
 require_once ($rota . ".php");
