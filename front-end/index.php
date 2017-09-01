@@ -6,4 +6,4 @@ if ($rota) {
   $rota = "login";
 }
 
-require_once ($rota . ".php");
+require_once ("views/" . $rota . ".php");
