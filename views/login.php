@@ -1,3 +1,4 @@
+?>
 <!-- Header -->
 <?php require_once ($_SERVER['DOCUMENT_ROOT'] . '/hackathon_ufrj/hackathon_ufjr/front-end/includes/header.php') ?>
 
